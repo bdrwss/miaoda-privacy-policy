@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秒达 Multi-Account Session Isolation - 隐私政策</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+        h1 {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1e40af;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #3b82f6;
+            margin-top: 20px;
+        }
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        strong {
+            color: #1e40af;
+        }
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>秒达 Multi-Account Session Isolation - 隐私政策</h1>
+    <div class="update-date">最后更新日期：2024年11月18日</div>
+
+    <div class="section">
+        <h2>1. 概述</h2>
+        <p>秒达 Multi-Account Session Isolation（"本扩展"）是一个浏览器扩展，用于提供多账号会话隔离功能。我们非常重视您的隐私，本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
+    </div>
+
+    <div class="section">
+        <h2>2. 数据收集</h2>
+        <h3>2.1 我们收集的数据</h3>
+        <p>本扩展在您的设备本地存储以下数据：</p>
+        <ul>
+            <li><strong>用户配置数据</strong>：站点模板信息（名称、域名、登录URL等）、账号实例信息（账号名称、备注等）、用户设置和偏好</li>
+            <li><strong>会话数据</strong>：Cookie数据（用于多账号隔离）、本地存储数据（localStorage、sessionStorage）、IndexedDB数据</li>
+            <li><strong>技术数据</strong>：扩展使用情况（用于功能优化）</li>
+        </ul>
+
+        <h3>2.2 我们不收集的数据</h3>
+        <ul>
+            <li>❌ 个人身份信息（姓名、邮箱、电话等）</li>
+            <li>❌ 浏览历史记录</li>
+            <li>❌ 网站访问内容</li>
+            <li>❌ 密码或其他敏感凭证</li>
+            <li>❌ 位置信息</li>
+            <li>❌ 设备信息</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. 数据存储</h2>
+        <h3>3.1 本地存储</h3>
+        <p><strong>所有数据仅存储在您的本地设备上</strong>：</p>
+        <ul>
+            <li>数据存储在浏览器的扩展存储空间（chrome.storage.local）</li>
+            <li>数据使用AES-GCM加密算法加密存储</li>
+            <li>加密密钥由用户主密钥通过PBKDF2派生</li>
+        </ul>
+
+        <h3>3.2 数据同步</h3>
+        <ul>
+            <li>本扩展<strong>不</strong>将数据同步到任何服务器</li>
+            <li>所有数据完全存储在您的本地设备</li>
+            <li>您可以通过扩展的备份功能导出数据</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. 数据使用</h2>
+        <h3>4.1 使用目的</h3>
+        <p>我们使用收集的数据仅用于：</p>
+        <ul>
+            <li>提供多账号会话隔离功能</li>
+            <li>管理不同账号的Cookie和存储</li>
+            <li>实现账号切换功能</li>
+            <li>提供数据备份和恢复功能</li>
+        </ul>
+
+        <h3>4.2 数据共享</h3>
+        <ul>
+            <li><strong>我们不会与任何第三方共享您的数据</strong></li>
+            <li><strong>我们不会将数据发送到任何服务器</strong></li>
+            <li><strong>所有数据处理都在您的本地设备上完成</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. 数据安全</h2>
+        <h3>5.1 加密保护</h3>
+        <ul>
+            <li>所有敏感数据使用AES-GCM加密算法加密</li>
+            <li>加密密钥由用户主密钥派生</li>
+            <li>主密钥仅存储在您的本地设备上</li>
+        </ul>
+
+        <h3>5.2 访问控制</h3>
+        <ul>
+            <li>扩展需要用户输入主密钥才能解锁</li>
+            <li>未解锁状态下，无法访问加密数据</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. 权限说明</h2>
+        <p>本扩展需要以下权限，用途如下：</p>
+        <ul>
+            <li><strong>storage</strong>：用于存储用户配置和会话数据</li>
+            <li><strong>cookies</strong>：用于管理多账号的Cookie隔离</li>
+            <li><strong>activeTab</strong>：用于在活动标签页中注入脚本，实现存储隔离</li>
+            <li><strong>alarms</strong>：用于定时清理过期的Cookie</li>
+            <li><strong>tabs</strong>：用于管理标签页和实例绑定关系</li>
+            <li><strong>host_permissions</strong>：用于访问目标网站，实现Cookie注入和存储代理</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. 第三方服务</h2>
+        <p>本扩展<strong>不</strong>使用任何第三方分析服务、广告服务或其他第三方服务。</p>
+    </div>
+
+    <div class="section">
+        <h2>8. 数据导出和删除</h2>
+        <h3>8.1 数据导出</h3>
+        <p>您可以通过扩展的设置页面导出所有数据：</p>
+        <ul>
+            <li>导出为JSON格式文件</li>
+            <li>包含所有模板、实例和配置数据</li>
+        </ul>
+
+        <h3>8.2 数据删除</h3>
+        <p>您可以随时：</p>
+        <ul>
+            <li>删除单个模板或实例</li>
+            <li>清除所有数据（通过扩展设置）</li>
+            <li>卸载扩展以删除所有数据</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>9. 儿童隐私</h2>
+        <p>本扩展不面向13岁以下的儿童。我们不会故意收集儿童的个人信息。</p>
+    </div>
+
+    <div class="section">
+        <h2>10. 隐私政策更新</h2>
+        <p>我们可能会不时更新本隐私政策。重大变更时，我们会在扩展中通知您。继续使用扩展即表示您接受更新后的隐私政策。</p>
+    </div>
+
+    <div class="section">
+        <h2>11. 联系我们</h2>
+        <div class="contact">
+            <p>如果您对本隐私政策有任何问题或疑虑，请通过以下方式联系我们：</p>
+            <p><strong>邮箱</strong>：support@miaoda.com（请替换为您的实际邮箱）</p>
+            <p><strong>GitHub</strong>：https://github.com/your-username（可选，如果有）</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>12. 同意</h2>
+        <p>使用本扩展即表示您同意本隐私政策。如果您不同意本政策，请勿使用本扩展。</p>
+    </div>
+
+    <hr>
+    <div class="footer">
+        <p>隐私政策版本：1.0<br>生效日期：2024年11月18日</p>
+    </div>
+</body>
+</html>
+
